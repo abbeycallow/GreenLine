@@ -1,21 +1,23 @@
 package com.company;
 
 abstract class employee {
-    String name;
-    int employeeId;
+    private String name;
+    private int employeeId;
 
-    public void setName(String newName) {
-        name = newName; }
+        public void setName(String newName) {
+            name = newName;
+        }
 
-    public String getName() {
-        return name; }
-
-    public void setEmployeeId(int newEmployeeId) {
-        employeeId = newEmployeeId;}
-
-    public int getEmployeeId() { return employeeId; }
+        public String getName() { return name; }
 
 
+        public void setEmployeeId(int newEmployeeId) {
+            employeeId = newEmployeeId;
+        }
+
+         public int getEmployeeId() { return employeeId; }
+
+    public void total() {}
 }
 
 
