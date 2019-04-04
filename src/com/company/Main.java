@@ -5,24 +5,26 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Cashier cash = new Cashier();
+        String user;
+
+        Cashier cashier = new Cashier();
+        Manager manager = new Manager();
 
         System.out.println("Welcome to GreenLine");
         System.out.println("Enter type of employee : ");
         Scanner scanner = new Scanner(System.in);
-        scanner.nextLine();
+        user = scanner.nextLine();
 
-        switch(scanner.toString()) {
+        switch(user) {
 
             case "cashier":
-                cash.calcWeeklyPay();
+                cashier.calcWeeklyPay();
                 break;
 
 
             case "manager":
-
-                    break;
-
+                manager.WeeklyPay();
+                break;
         }
     }
 }
